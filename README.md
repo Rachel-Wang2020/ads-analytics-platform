@@ -7,6 +7,7 @@
                 -✅ 4) @repo/types 能被未来的 apps 引用（paths 已就位）
 - Day 1(feb 4):
               generator event -> raw_events -> aggregration job -> ads_metric_daily -> graphQL BFF -> react dashboard
+  the dashboard never queries raw event tables directly, all analytical queries go through pre-aggregated rollup tables to guarantee predictable latency and cost
   
 - Day 2: 
 - Day 3:
