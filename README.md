@@ -5,6 +5,12 @@
                 -✅ 2) repo 有 apps/ packages/ infra/ 三层结构
                 -✅ 3) pnpm dev / pnpm build / pnpm typecheck 有脚手架
                 -✅ 4) @repo/types 能被未来的 apps 引用（paths 已就位）
-- Day 1: 
+- Day 1(feb 4):
+              generator event -> raw_events -> aggregration job -> ads_metric_daily -> graphQL BFF -> react dashboard
+  
 - Day 2: 
 - Day 3:
+- Day 4:
+- Day 5:
+- Day 6:
+- Day 7:
