@@ -8,6 +8,15 @@
 - Day 1(feb 4):
               generator event -> raw_events -> aggregration job -> ads_metric_daily -> graphQL BFF -> react dashboard
   the dashboard never queries raw event tables directly, all analytical queries go through pre-aggregated rollup tables to guarantee predictable latency and cost
+
+  Ownership
+  data infra owns the schema(infra/db)
+  worker owns event ingestion(apps/worker)
+  aggregator owns rollup correctness(apps/worker another job)
+  bff owns qurey contract + rbac + cache(apps/bff)
+  fe owns interation + performance(apps/web)
+  
+  
   
 - Day 2: 
 - Day 3:
